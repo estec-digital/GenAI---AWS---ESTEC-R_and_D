@@ -1,0 +1,230 @@
+[
+    {
+        "title": "DateTime",
+        "description_vn": "Dữ liệu ngày/tháng/năm và giờ tương ứng với từng thời điểm",
+        "description_en": "Day/month/year data and time corresponding to each time",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Pyrometer",
+        "description_vn": "Nhiệt độ vòi đốt lò",
+        "description_en": "Burner tip temperature measured by pyrometer",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Kilndriamp",
+        "description_vn": "Dòng điện động cơ quay lò",
+        "description_en": "Kiln drive motor current",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "BET",
+        "description_vn": "Nhiệt độ đầu lò",
+        "description_en": "urner End Temperature (BET)",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Oxi_GA02",
+        "description_vn": "Cảm biến GA02 đo nồng độ khí Oxi sau cyclon tầng 2 phía silo",
+        "description_en": "Oxygen concentration after cyclone stage 2 (GA02 sensor)",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Oxi_GA01",
+        "description_vn": "Cảm biến GA01 đo nồng độ khí Oxi sau cyclon tầng 2 phía silo",
+        "description_en": "Oxygen concentration after cyclone stage 1 (GA01 sensor)",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Oxi_GA03",
+        "description_vn": "Cảm biến GA03 đo nồng độ khí Oxi sau cyclon tầng 2 phía silo",
+        "description_en": "Oxygen concentration after cyclone stage 3 (GA03 sensor)",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "NOx",
+        "description_vn": "Cảm biến GA01 đo nồng độ khí NOx ở đầu lò",
+        "description_en": "NOx concentration measured by GA01 sensor at kiln inlet",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "PCCoal_SP",
+        "description_vn": "Điểm thiết lập than PC",
+        "description_en": "PC Coal set point",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "TotalHeapConsumption",
+        "description_vn": "Tổng mức tiêu thụ đống",
+        "description_en": "Total Heap Consumption",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "TowerOilTemp",
+        "description_vn": "Nhiệt độ tháp dầu",
+        "description_en": "Oil Tower Temperature",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "FurnaceSpeed_SP",
+        "description_vn": "Tốc độ lò SP",
+        "description_en": "Furnace Speed SP",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "RecHeadTemp",
+        "description_vn": "Nhiệt độ đầu của bộ thu hồi nhiệt",
+        "description_en": "Recuperator Head Temperature",
+        "area": "Phân xưởng lò nung"
+    },
+    { 
+        "title": "Coal_SP",
+        "description_vn": "Than SP",
+        "description_en": "Coal SP",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "ActualFuel_SP",
+        "description_vn": "Điểm thiết lập nhiên liệu thực tế",
+        "description_en": "Actual fuel set point",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "HeatReplaceRatio",
+        "description_vn": "Tỷ lệ thay thế nhiệt bằng nhiên liệu thay thế",
+        "description_en": "Heat replacement ratio from alternative fuels",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "ActualFuel",
+        "description_vn": "Lượng nhiên liệu tiêu thụ thực tế",
+        "description_en": "Actual fuel consumption",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "FurnaceSpeed",
+        "description_vn": "Tốc độ quay lò thực tế",
+        "description_en": "Actual kiln rotation speed",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "AvgBZT",
+        "description_vn": "Nhiệt độ trung bình vùng cháy BZT",
+        "description_en": "Average Burning Zone Temperature",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Fan_SP",
+        "description_vn": "Tốc độ quạt thiết lập",
+        "description_en": "Fan speed set point",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "FanDegree",
+        "description_vn": "Độ mở van điều khiển quạt",
+        "description_en": "Fan vane opening degree",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Temperature_C3",
+        "description_vn": "Nhiệt độ tầng cyclon C3",
+        "description_en": "Cyclone stage C3 temperature",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Temperature_C2",
+        "description_vn": "Nhiệt độ tầng cyclon C2",
+        "description_en": "Cyclone stage C2 temperature",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "ActualFeedRatePC",
+        "description_vn": "Lưu lượng than phun thực tế",
+        "description_en": "Actual PC coal feed rate",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "FabricScale",
+        "description_vn": "Trọng lượng nguyên liệu vải cân được",
+        "description_en": "Material weight measured by fabric scale",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "KilnhoodPressure",
+        "description_vn": "Áp suất tại đầu lò (hood)",
+        "description_en": "Kiln hood pressure",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Fan4S1",
+        "description_vn": "Quạt gió cấp 4 S1",
+        "description_en": "4th stage S1 fan",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "CoveyorFlowRate02",
+        "description_vn": "Lưu lượng băng tải 02",
+        "description_en": "Conveyor flow rate 02",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "SO3",
+        "description_vn": "Hàm lượng SO3 trong khí thải",
+        "description_en": "SO3 concentration in exhaust gas",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "ActualFeedRateSZ",
+        "description_vn": "Lưu lượng cấp liệu thực tế vùng SZ",
+        "description_en": "Actual feed rate at SZ zone",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "CaO_f",
+        "description_vn": "Hàm lượng vôi tự do (CaO tự do) trong clinker",
+        "description_en": "Free lime (free CaO) content in clinker",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Hydraulic_Pressure",
+        "description_vn": "Áp suất thủy lực",
+        "description_en": "Hydraulic pressure",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "CoalBlowerPressure02",
+        "description_vn": "Áp suất quạt gió thổi than 02",
+        "description_en": "Coal blower pressure 02",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "TempAfterIDFan",
+        "description_vn": "Nhiệt độ sau quạt ID",
+        "description_en": "Temperature after ID fan",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "CoveyorFlowRate01",
+        "description_vn": "Lưu lượng băng tải 01",
+        "description_en": "Conveyor flow rate 01",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Thermal_Exhaust",
+        "description_vn": "Tổn thất nhiệt qua khí thải",
+        "description_en": "Thermal loss through exhaust gas",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "CoalBlowerPressure01",
+        "description_vn": "Áp suất quạt gió thổi than 01",
+        "description_en": "Coal blower pressure 01",
+        "area": "Phân xưởng lò nung"
+    },
+    {
+        "title": "Oxi_GA04",
+        "description_vn": "Cảm biến GA04 đo nồng độ khí Oxi sau cyclon tầng 2 phía silo",
+        "description_en": "Oxygen concentration after cyclone stage 4 (GA03 sensor)",
+        "area": "Phân xưởng lò nung"
+    }
+]
