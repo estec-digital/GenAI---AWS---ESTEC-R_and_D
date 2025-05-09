@@ -35,10 +35,14 @@ This repository will guide gradually setting up geniel in the AWS environment ‚ò
 - Choose **x86_64** option
 - Click "**Create function**" button at right footer corner to complete create new lambda function
 
-
+![alt text](Photos/image13.png)
 ![alt text](Photos/image11.png)
 
-![alt text](Photos/image13.png)
+- **Enter** the code in the editor of Code source
+	- **Example** : Services/sample_action_group_genai.py
+- Then **click** **Deploy -> Test -> Invoke**
+![alt text](Photos/image15.png)
+
 ---
 ## Step 1.3: Create Action Group ü§ù
 - Click "**Add**" button to create Action Group
@@ -53,6 +57,14 @@ This repository will guide gradually setting up geniel in the AWS environment ‚ò
 - Choose **Define with API schemas** option
 
 ![alt text](Photos/image9.png)
-- Choose **Select an existing Lambda function** option in **Action group invocation**
+- Choose **Select an existing Lambda function** option in **Action group invocation**  and **Select Lambda function**
 
 ![alt text](Photos/image10.png)
+ - Choose **Define via in-line schema editor** option
+	- **Enter** source for In-line OpenAPI schema
+		- **Example** :  /Services/sample_inline_openAPI_schema.yaml
+
+![alt text](Photos/image14.png)
+- Click **Create** button to complete
+---
+## Step 1.4: Set up DynamoDB üëè
