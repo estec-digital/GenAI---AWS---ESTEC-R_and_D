@@ -4,7 +4,7 @@ aliases:
 sticker: emoji//1f61d
 banner: projects/estec-machine-learning-frontend/src/assets/images/logo.png
 ---
-# ESTEC - AWS Gen AI Workshop
+****# ESTEC - AWS Gen AI Workshop
 
 ```table-of-contents
 ```
@@ -15,7 +15,7 @@ banner: projects/estec-machine-learning-frontend/src/assets/images/logo.png
 
 ## Overview
 
-This is a fullstack Chatbot app that is able to help a customer find a new drink based on preferences such as calories, allergens, flavors, or seasonal trends. After a drink is found it will walk the customer through the order process and submit the order. The Chatbot is able to surface recommendations via Bedrock Knowledge base using product data stored in S3. The Chatbot is also able to access known customer preferences from Datastore, find local store locations for pickup, and submit order to Commerce engine using Bedrock Agents. This is 100% Serverless and is well architected. Demo -> POC in a matter of hours!
+This is a fullstack Chatbot app that is able to help a customer find a new drink based on preferences such as calories, allergens, flavors, or seasonal trends. After a drink is found it will walk the customer through the order process and submit the order. The Chatbot is able to surface recommendations via Bedrock Knowledge base using product data stored in S3. The Chatbot is **also** able to access known customer preferences from Datastore, find local store locations for pickup, and submit order to Commerce engine using Bedrock Agents. This is 100% Serverless and is well architected. Demo -> POC in a matter of hours!
 
 ![image](https://static.us-east-1.prod.workshops.aws/3c5f300d-68b0-4f53-b425-2003a434e39b/static/ui.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy8zYzVmMzAwZC02OGIwLTRmNTMtYjQyNS0yMDAzYTQzNGUzOWIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NzA5ODYxOH19fV19&Signature=ArfC2nN-aKUqRaBO5pln9x23qRBhkYdeoNMMbwM5mZ8YKq%7EpsWotCirljOajNltmvafHzQygmrqSEAuF8yaf16%7E5T6fzlOmJnUbjYHrQtOH00nCV41DjYJT6sfkSkAvy-ANOsZ8b9SO1UKx6Mf4TmhfNwMxHfpVzby5ZpaxYLHBRcHAcyfGrm4uRva0VdXNlVJefWKmR-ioCXZRTKeWI3t6YoZFj2khnB62lRDQJxoQ3l8F3rO2N2jpLuGC8Zrtqd2j0v6XwtOS9OeeE4k2KgHA9CVMjQuKCszo8gIZZnPUIkznLrh1926gWvz7CTx1GlQaXpT9fNEzzt1A2wsSRUg__)
 
@@ -73,19 +73,16 @@ If you are using your own evnironment, you will need to import the workshop's pa
 1. In the terminal, download the Cloudformation Code.
 
 ```bash
-1
 curl 'https://static.us-east-1.prod.workshops.aws/3c5f300d-68b0-4f53-b425-2003a434e39b/static/code.zip?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy8zYzVmMzAwZC02OGIwLTRmNTMtYjQyNS0yMDAzYTQzNGUzOWIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NzExNjQ1Nn19fV19&Signature=Ys~BzR780hO22lfP2w13zccWOxIfDKYKH5FM~z9SHvfIwIfvcp63ET9cR9DdhLzrwI4ywXo0I4G8N5FQd6Pr09dwaBVTi9iDfAE83pQmALgia5h5E8Al3oRq47ypEXlcXAqhJ-YcmdalRTzjL~J4AatKe4uza3xf23nUWY6qC4TVu7m8HQmGPc2pLfT49sXN9lk8HBjpHe3qRCakSONO2ezgQEjEWor1MQ4V14qJNv4s44a63LzwgcngqbMVXepa9uJI4N-g2l8uH9B0V9ccusa8L1pP5xUkKJxMNaNazi7twKZgYV-Nc1SCUQYHQZ5AMxMrtUPnkxlIUd2fb80jjw__' --output code.zip
 ```
 
 3. Unzip code.zip and enter code directory
 
 ```bash
-1
 unzip code.zip
 ```
 
 ```bash
-1
 cd bedrock-agents-order-bot-workshop
 ```
 
@@ -94,12 +91,10 @@ cd bedrock-agents-order-bot-workshop
 1. From the command line, change director to ./backend directory and use AWS SAM to deploy the AWS resources for the backend as specified in the template.yaml file:
 
 ```bash
-1
 cd backend
 ```
 
 ```bash
-1
 sam build && sam deploy --guided
 ```
 
@@ -133,14 +128,12 @@ For this step, you will download a zip that contains the product information in 
 1. In the terminal, change directory to the home folder.
 
 ```bash
-1
 cd ~
 ```
 
 2. From the CLI, run the following command to list the S3 buckets in your account.
 
 ```bash
-1
 aws s3 ls
 ```
 
@@ -151,19 +144,16 @@ Several S3 buckets may be listed. Take note of the S3 bucket that is named `dig
 3. Now, download the **product-data** zip. This zip contains the drink data in CSV format that will be the source data for the knoweldge base.
 
 ```bash
-1
 curl 'https://static.us-east-1.prod.workshops.aws/3c5f300d-68b0-4f53-b425-2003a434e39b/assets/product-data.zip?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy8zYzVmMzAwZC02OGIwLTRmNTMtYjQyNS0yMDAzYTQzNGUzOWIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NzExNjQ1Nn19fV19&Signature=Ys~BzR780hO22lfP2w13zccWOxIfDKYKH5FM~z9SHvfIwIfvcp63ET9cR9DdhLzrwI4ywXo0I4G8N5FQd6Pr09dwaBVTi9iDfAE83pQmALgia5h5E8Al3oRq47ypEXlcXAqhJ-YcmdalRTzjL~J4AatKe4uza3xf23nUWY6qC4TVu7m8HQmGPc2pLfT49sXN9lk8HBjpHe3qRCakSONO2ezgQEjEWor1MQ4V14qJNv4s44a63LzwgcngqbMVXepa9uJI4N-g2l8uH9B0V9ccusa8L1pP5xUkKJxMNaNazi7twKZgYV-Nc1SCUQYHQZ5AMxMrtUPnkxlIUd2fb80jjw__' --output product-data.zip
 ```
 
 4. Unzip product-data.zip and change directory to **product-data** directory
 
 ```bash
-1
 unzip product-data.zip
 ```
 
 ```bash
-1
 cd product-data
 ```
 
@@ -282,7 +272,6 @@ In this workshop, your agent will be a digital barista that you will be able to 
     
 
 ```instruction
-1
 You are an agent that helps customers purchase a drink. Retrieve customer details like customer ID, city, and likes based on the name. Provide first recommendation based on customer likes {likes}. Further recommendations are based on new customer preference prompt. Generate response with product name and calories. After customer indicates product they would like to order, use customer city {city} to get potential store locations. Confirm the store location. Confirm product name, product size, order total, and store location. Once confirmed, submit order with all required fields. On order success return confirmation message in format below. Your order {orderId} has been confirmed. Your drink will be ready in the next 5 mins at store {storeName}.
 ```
 
@@ -297,9 +286,9 @@ You are an agent that helps customers purchase a drink. Retrieve customer detail
 > [!bug]
 > Khi báo lỗi người dùng bị cấp quyền thiếu Policies khi tạo Agent thì ta fix bằng cách: 
 
-![[Pasted image 20250506175832.png]]
+![[image24.png]]
 
-![[Pasted image 20250506180852.png]]
+![[image25.png]]
 
 > [!todo]
 > Tạo Policies với tên SageMakerPublicHubAccess
@@ -315,13 +304,13 @@ You are an agent that helps customers purchase a drink. Retrieve customer detail
 > Sau đó phải attach file policies mới thêm vào
 
 
-> ![[Pasted image 20250506180635.png]]
+> ![[image23.png]]
 
 
 > [!todo]
 > Vào phần additional setting -> chọn enable all options
 
->> ![[Pasted image 20250506180352.png]]
+![[image22.png]]
 ## VI. Create an Action Group
 
 ### Create an action group for an Amazon Bedrock agent
@@ -353,7 +342,6 @@ For this workshop, these actions are already defined in a API schema provided in
 
 
 > [!important]
-> Important
 > 
 > Clear out any existing schema or make sure to copy and paste all the existing schema
 
@@ -494,7 +482,7 @@ This API schema defines three primary endpoints, `/customer/{CustomerName}`, `
 
 ![action group complete](https://static.us-east-1.prod.workshops.aws/3c5f300d-68b0-4f53-b425-2003a434e39b/static/action_group_complete.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy8zYzVmMzAwZC02OGIwLTRmNTMtYjQyNS0yMDAzYTQzNGUzOWIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NzExNjQ1Nn19fV19&Signature=Ys%7EBzR780hO22lfP2w13zccWOxIfDKYKH5FM%7Ez9SHvfIwIfvcp63ET9cR9DdhLzrwI4ywXo0I4G8N5FQd6Pr09dwaBVTi9iDfAE83pQmALgia5h5E8Al3oRq47ypEXlcXAqhJ-YcmdalRTzjL%7EJ4AatKe4uza3xf23nUWY6qC4TVu7m8HQmGPc2pLfT49sXN9lk8HBjpHe3qRCakSONO2ezgQEjEWor1MQ4V14qJNv4s44a63LzwgcngqbMVXepa9uJI4N-g2l8uH9B0V9ccusa8L1pP5xUkKJxMNaNazi7twKZgYV-Nc1SCUQYHQZ5AMxMrtUPnkxlIUd2fb80jjw__)
 
-## VII.Associate Knowledge Base with Agent
+## VII. Associate Knowledge Base with Agent
 
 You can also associate the knowledge base with an agent and the agent will invoke it when necessary during orchestration.
 
@@ -547,7 +535,7 @@ At this stage of the workshop, you have sufficiently modified your agent and it'
 > [!todo]
 > Phải thêm 2 cái ID vào xxAPIProxyxx
 > 
-![[Pasted image 20250506180239.png]]
+![[image20.png]]
 
 ## IX. Test your Setup
 
@@ -600,8 +588,7 @@ Now that we have finished the Agent and Knowledge base setup, it is time to conf
 
 > [!todo]
 > Phải thêm 2 cái ID vào xxAPIProxyxx
-> 
-![[Pasted image 20250506180239.png]]
+>![[image21.png]]
 
 ## II. Deploy Frontend Application
 
@@ -610,14 +597,12 @@ Now you are ready to deploy the React application. Navigate back to the command 
 1. From the command line, navigate back to the **bedrock-agents-order-bot-workshop** directory:
 
 ```bash
-1
 cd ~/bedrock-agents-order-bot-workshop
 ```
 
 2. You can make sure you're in the correct directory by listing the files and ensure you have the source code files.
 
 ```bash
-1
 ls
 ```
 
@@ -626,21 +611,18 @@ ls
 3. You need to install the the React package dependencies by running following command:
 
 ```bash
-1
 npm install
 ```
 
 4. Next, create an environmental variable file that will inject Amazon Cognito and APIGateway variables into React code with the following command:
 
 ```bash
-1
 npm run create-env
 ```
 
 5. Verify that a `.env` file exist by listing all files in the directory.
 
 ```bash
-1
 ls -a
 ```
 
@@ -649,7 +631,6 @@ ls -a
 6. Now deploy the app to S3 and access via Cloudfront. Run the build and deploy script with following command:
 
 ```bash
-1
 npm run sync-website
 ```
 
@@ -695,8 +676,6 @@ Please fill out feedback form FORM HERE
 1. From the command line, change director to ./backend directory and use AWS SAM to remove AWS resources.
 
 ```bash
-1
-2
 cd ./backend
 sam delete
 ```
