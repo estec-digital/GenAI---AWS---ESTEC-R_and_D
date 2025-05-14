@@ -8,3 +8,11 @@
 
 ![alt text](../../Photos/image17.png)
 
+---
+# Error "The sessionId 617443366113670 is new or expired. Try providing inputText instead of invocationResults"
+
+![alt text](../../Photos/image33.png)
+![alt text](../../Photos/image34.png)
+
+---
+
